@@ -1,0 +1,18 @@
+[project]
+name = "moralagent"
+version = "0.1.0"
+description = "MoralAgent: moral judgment with an LLM-based agent (LangGraph + Ollama)"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=1.0",
+    "langchain-core>=1.0",
+    "langchain-ollama>=1.0",
+    "pydantic>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["moralagent"]
